@@ -1,0 +1,24 @@
+{
+	"source": {
+		"database": "postgres",
+		"driver": "org.postgresql.Driver",
+		"url": "jdbc:postgresql://omi-tia-ods-perftest-cluster.cluster-cq2voeb9fipc.eu-west-1.rds.amazonaws.com:5432/tiadr",
+		"user": "postgres",
+		"password": "Sapiens2022",
+		"catalog_nm": "`omi-catalog`",
+		"audit_schema_nm": "`omi-catalog`.si_core_audit",
+		"jdbc_offset": 100000,
+		"jdbc_fetch_size": 10000,
+		"jdbc_partitions": 10,
+		"delta_partitions": 10
+	},
+	"job_num": {
+		"ods_job_num": 31,
+		"dwh_job_num": 41
+	},
+	"logging": {
+		"folder_path": "/tmp",
+		"file_name": "parquet",
+		"mode": "info"
+	}
+}
